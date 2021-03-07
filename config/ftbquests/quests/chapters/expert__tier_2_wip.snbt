@@ -1,0 +1,11 @@
+{
+	id: "0000000000000B67",
+	group: "",
+	order_index: 1,
+	filename: "expert__tier_2_wip",
+	title: "Expert - Magic",
+	icon: "refinedstorage:lime_controller",
+	always_invisible: true,
+	default_quest_shape: "",
+	quests: []
+}

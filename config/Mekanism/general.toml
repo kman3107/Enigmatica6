@@ -6,8 +6,8 @@
 	maxUpgradeMultiplier = 10
 	#Peak processing rate for the Solar Neutron Activator. Note: It can go higher than this value in some extreme environments.
 	maxSolarNeutronActivatorRate = 64
-	#Any mod ids added to this list will not be able to have any of their blocks, picked up by the cardboard box.
-	cardboardModBlacklist = []
+	#Any mod ids added to this list will not be able to have any of their blocks, picked up by the cardboard box. For example: ["mekanism"]
+	cardboardModBlacklist = ["refinedstorage", "tetra", "storagedrawers", "lootr", "extrastorage"]
 	#Disable to make the anchor upgrade not do anything.
 	allowChunkloading = true
 	#How much heat energy is created from one Joule of regular energy in the Resistive Heater.
@@ -70,7 +70,7 @@
 		#Disables Forge Energy (FE,RF,IF,uF,CF) power integration. Requires world restart (server-side option in SMP).
 		blacklistForge = false
 		#Maximum Joules per mB of Steam. Also affects Thermoelectric Boiler.
-		maxEnergyPerSteam = "10"
+		maxEnergyPerSteam = "2"
 		#Conversion multiplier from Forge Energy to Joules (FE * JoulePerForgeEnergy = Joules)
 		JoulePerForgeEnergy = "2.5000"
 		#Conversion multiplier from EU to Joules (EU * JoulePerEU = Joules)
@@ -137,6 +137,12 @@
 		chunkCheckRadius = 5
 		#Radiated objects and entities are multiplied by this constant roughly once per second to represent their dosage decay.
 		targetDecayRate = 0.9995
+		#Number of ticks required for radioactive gas stored in a Radioactive Waste Barrel to decay radioactiveWasteBarrelDecayAmount mB.
+		#Range: > 1
+		radioactiveWasteBarrelProcessTicks = 1200
+		#Number of mB of gas that decay every radioactiveWasteBarrelProcessTicks ticks when stored in a Radioactive Waste Barrel. Set to zero to disable decay all together. (Gases in the mekanism:waste_barrel_decay_blacklist tag will not decay).
+		#Range: 0 ~ 9223372036854775807
+		radioactiveWasteBarrelDecayAmount = 100
 		#Radiation sources are multiplied by this constant roughly once per second to represent their emission decay. At the default rate, it takes roughly 10 days to remove a 1,000 Sv/h (crazy high) source.
 		sourceDecayRate = 0.9995
 		#Defines the minimum severity radiation dosage severity (scale of 0 to 1) for which negative effects can take place. Set to 1 to disable negative effects completely.
