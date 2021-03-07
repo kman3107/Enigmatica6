@@ -37,6 +37,14 @@
 		sortRange = ""
 
 	[[sorting.containerOverrides]]
+		containerClass = "com.refinedmods.refinedstorage.container.CrafterManagerContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "com.refinedmods.refinedstorage.container.DiskManipulatorContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
 		containerClass = "appeng.container.implementations.MEMonitorableContainer"
 		sortRange = ""
 
@@ -58,6 +66,22 @@
 
 	[[sorting.containerOverrides]]
 		containerClass = "blusunrize.immersiveengineering.common.gui.CraftingTableContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "se.mickelus.tetra.blocks.workbench.WorkbenchContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "mcjty.rftoolsstorage.modules.scanner.blocks.StorageScannerContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "mcjty.rftoolsstorage.modules.modularstorage.blocks.ModularStorageContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "mcjty.rftoolsutility.modules.crafter.blocks.CrafterContainer"
 		sortRange = ""
 
 	#Categor(y/ies) for sorting
